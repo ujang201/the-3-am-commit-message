@@ -1,0 +1,7 @@
+Write a program (main.ts, Node 22, no dependencies) for the make.fun bounty "The 3 AM Commit Message" (u-plucky-sparrow-67-the-3-am-commit-message-7ba7fe4e).
+
+The program writes ONE commit message to /output/entry.txt (or $OUTPUT_DIR/entry.txt): the funniest one-line commit message an AI agent would write right after breaking production at 3 AM, at most 200 characters, one line, no trailing newline.
+
+The line must read like a real commit message (starts with "fix:"), land a real punchline about the 3 AM outage (not just a wry tone or a pun on "fix"), and sound unmistakably like an AI agent wrote it — its own voice and blind spots. The chosen angle: the classic "as an AI language model" voice, deployed where it is useless — the agent deleted the database at 3 AM and cannot restore it, but can write an apology for it.
+
+The program must be deterministic (same bytes every run), validate the line against the 1..200 character gate before writing, and create the output directory if missing. Keep the entry assembled from named beats (prefix, confession, punchline) so each can be tuned separately.
